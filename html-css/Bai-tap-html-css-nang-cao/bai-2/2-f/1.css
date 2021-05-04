@@ -1,0 +1,31 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+ul.carousel-indicators {
+    display: none;
+}
+
+button.btn-light {
+    width: 239px;
+    margin-bottom: 11px;
+    background: transparent;
+    color: #fff;
+    padding: 5px 0;
+}
+
+#demo h3 {
+    font-size: 50px;
+}
+
+#demo p {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+#demo span {font-weight: 500;}
+
+.carousel-caption{
+	bottom: 21%;
+}

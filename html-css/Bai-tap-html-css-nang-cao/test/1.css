@@ -1,0 +1,33 @@
+*{
+	padding: 0;
+	margin: 0
+}
+
+/*.container-fluid {margin-bottom: 9%;}*/
+
+.content {
+    width: 90%;
+    height: 1000px;
+    background: gray;
+}
+
+.container-fluid.wrapper::before {
+    content: "day la before";
+    border: 2px solid;
+    position: absolute;
+    width: 25%;
+    bottom: -49px;
+}
+
+.container-fluid::after {
+    content: "day la after";
+    border: 2px solid;
+    position: absolute;
+    width: 25%;
+    bottom: -49px;
+    right: 48px;
+}
+
+.container-fluid.wrapper{
+	position: fixed;
+}

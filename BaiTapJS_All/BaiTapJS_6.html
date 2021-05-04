@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Exercise Javascript 6</h2>
+       <div id="content" style="padding: 20px; background: blue; color: white; margin: 40px 0px;">
+              CHÀO MỪNG BẠN ĐẾN VỚI VTD
+       </div>
+
+       <input type="button" id="btn1" value="Đổi backgroud thành màu đỏ"/>
+       <input type="button" id="btn3" value="Đổi backgroud thành màu vàng"/>
+
+       <!-- Thêm 1 button ở đây để đổi màu ô ở trên thành màu vàng -->
+
+       <br>
+       <br>
+
+       <input type="radio" id="green" name="colorRadio" value="green">
+       <label for="green">Green</label><br>
+       <input type="radio" id="black" name="colorRadio" value="black">
+       <label for="black">Black</label><br>
+       <input type="radio" id="orange" name="colorRadio" value="orange">
+       <label for="orange">Orange</label>
+
+       <br>
+       <br>
+
+       <input type="button" id="btn2" value="Đổi màu background theo radio button"/>
+       <!-- Làm sao để nhấn nút này thì màu nền được thay đổi theo giá trị của radio button chứ không phải hiện ra thông báo Me here = true hay false -->
+
+
+<script type="text/javascript">
+       var div = document.getElementById('content');
+       var button1 = document.getElementById("btn1");
+       button1.onclick = function () {
+              div.style.background = "red";
+       };
+       var button3 = document.getElementById("btn3");
+       button3.onclick = function () {
+              div.style.background = "yellow";
+       };
+
+
+       
+
+       var button2 = document.getElementById("btn2");
+       button2.onclick = function () {
+              var radioElements = document.getElementsByName("colorRadio");
+              for (var i = 0; i < radioElements.length; i++){
+                     //alert("Me here =" + radioElements[i].checked);
+                     // console.log(radioElements[i].checked );
+                     if(radioElements[i].checked){
+                            //return radioElements[i].value;
+                            console.log(radioElements[i].value);
+                            div.style.background = radioElements[i].value;
+                     }
+
+              }
+       };
+
+       // Kết luận:
+       //         1. Chúng ta hiểu cách tương tác giữa button, radio button và thẻ div
+       //         2. Chúng ta làm quen với khái niệm checked
+       //         3. Chúng ta biết thêm 1 cách để viết hàm onclick
+       //         4. Chúng ta biết thêm về mảng (tức là danh sách các item có cùng tên)
+       //         5. Chúng ta biết về cách lấy các item có cùng tên giống nha bằng hàm document.getElementsByName
+       //         6. Chúng ta hiểu thêm về thuộc tính checked của radio button
+       //         7. Chúng ta hiểu thêm một chút về vòng lặp for
+
+</script>
+</body>
+</html>

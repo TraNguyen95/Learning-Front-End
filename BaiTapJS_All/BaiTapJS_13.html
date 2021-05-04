@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Exercise Javascript 13</h2>
+       <h3>Tính tuổi của nhân viên thứ <span id="sttSpan1">1</span> trong công ty (giả sử năm hiện tại là năm 3000) </h3>
+       <br>
+
+       Nhập năm sinh (>= 3000) của nhân viên thứ <span id="sttSpan2">1</span>:
+       <input type="text" id="tuoiTxt" /> <br> <br>
+ 
+       Tuổi của nhân viên thứ <span id="sttSpan3">1</span> là: <span id="resultDiv">0</span> <br> <br>
+       <input type="button" onclick="tinhTuoi()" value="Tính tuổi">
+
+<script type="text/javascript">
+       var stt = 1;
+
+       function tinhTuoi() {
+             stt++;
+             var namSinh = layDuLieu();
+             var tuoi = tinhToan(namSinh);
+             xuatDuLieu(stt, tuoi, 'sttSpan1', 'sttSpan2', 'sttSpan3');
+       }
+
+       function layDuLieu() {
+              var returnString = document.getElementById('tuoiTxt').value;
+              return returnString;
+              //console.log(returnString);
+       }
+
+       function tinhToan(namSinhInput) {
+              var tuoiTraVe = parseInt(namSinhInput) - 3000;
+              //sua: return tuoiTraVe - 1000;
+              //console.log(tuoiTraVe);
+              return tuoiTraVe;
+       }
+
+
+       function xuatDuLieu(sttCuaNV, tuoiCanInRa, viTriCanIn1, viTriCanIn2, viTriCanIn3) {
+              document.getElementById(viTriCanIn1).innerHTML = sttCuaNV;
+              document.getElementById(viTriCanIn2).innerHTML = sttCuaNV;
+              document.getElementById(viTriCanIn3).innerHTML = sttCuaNV-1;
+              document.getElementById('resultDiv').innerHTML = tuoiCanInRa;
+       }
+
+       // Yêu cầu: 
+       //     Hiện tại chương trình đang có 4 lỗi, hày tìm và sửa 4 lỗi này
+
+       // Hãy phân tích sự giống nhau giữa các hàm ở bài tập 12 và bài tập 13
+       // Sử dụng callback
+
+</script>
+</body>
+</html>

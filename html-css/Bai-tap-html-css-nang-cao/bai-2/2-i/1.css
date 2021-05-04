@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+button.regis {
+    width: 100%;
+    padding: 1%;
+    background: transparent;
+    color: #fff;
+    border: none;
+    background: green;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff !important;
+  opacity: 0.7 !important;
+}
+
+.container input {
+    background: transparent;
+}
+
+form#form2 {
+    background: #0000008a;
+    padding: 33px;
+}
+
+form#form1 {
+    background: #0000008a;
+    padding: 33px;
+}
+
+.container {
+    padding: 2% 2%;
+    background-image: linear-gradient(to right, rgb(145 156 177), rgb(23 20 20));
+}
+
+.col-md-6.form_1.text-white {
+    padding: 2% 2%;
+    /* background: #000000c7; */
+}
+
+.col-md-6.form_2.text-white {
+    padding: 2% 2%;
+    background: #000000c7;
+}
+
+form#form1 button {
+    width: 48%;
+    padding: 1% 0;
+}
+
+button:hover {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+button.reset {
+    color: #fff;
+    background: #ad1c1c;
+    border: none;
+}
+
+button.sign {
+    background: green;
+    border: none;
+    color: #fff;
+}
+
+span{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+form p{
+	position: relative;
+}
+
+span.fa.fa-user{
+	position: absolute;
+	top: 8px;
+    right: 8px;
+}

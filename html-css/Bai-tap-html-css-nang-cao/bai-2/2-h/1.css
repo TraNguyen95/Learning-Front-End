@@ -1,0 +1,23 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	background-color: #E1A339;
+	padding: 1% 1%;
+}
+
+input#name,input#email {
+    width: 50%;
+    display: inline;
+}
+
+input#name {
+    margin-right: 8px;
+    margin-bottom: 13px;
+}
+
+input {
+    margin-bottom: 9px;
+}

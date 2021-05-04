@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="1.css">
+	<title>Bai 3</title>
+</head>
+<body>
+	<div class="container">
+		<div class="img animation1">
+			<img src="cinqueterre.jpg " alt="">
+			<div class="content-hide ">
+				<h3>EXPLAINING THE IOS BLOCK</h3>
+				<h4>WEB DESIGN</h4>
+				<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Harum debitis, corporis? Rerum vel quam provident architecto et labore distinctio! Reiciendis eum natus et dolore tempore optio molestias aut eius ut?</p>
+			</div>
+		</div>
+		<div class="img animation2">
+			<img src="cinqueterre.jpg " alt="">
+			<div class="content-hide ">
+				<h3>EXPLAINING THE IOS BLOCK</h3>
+				<h4>WEB DESIGN</h4>
+				<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Harum debitis, corporis? Rerum vel quam provident architecto et labore distinctio! Reiciendis eum natus et dolore tempore optio molestias aut eius ut?</p>
+			</div>
+		</div>
+		<div class="img animation3">
+			<img src="cinqueterre.jpg " alt="">
+			<div class="content-hide">
+				<h3>EXPLAINING THE IOS BLOCK</h3>
+				<h4>WEB DESIGN</h4>
+				<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Harum debitis, corporis? Rerum vel quam provident architecto et labore distinctio! Reiciendis eum natus et dolore tempore optio molestias aut eius ut?</p>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	var imgElement1 = document.querySelector('.animation1');
+	var imgElement2 = document.querySelector('.animation2');
+	var imgElement3 = document.querySelector('.animation3');
+
+		var hidenElement1 = imgElement1.querySelector('.content-hide');
+		var hidenElement2 = imgElement2.querySelector('.content-hide');
+		var hidenElement3 = imgElement3.querySelector('.content-hide');
+		//console.log(hidenElement1);
+		imgElement1.onmouseover = function(){
+			hidenElement1.style.display = 'block';
+			hidenElement1.style.animation = 'second 2s 2';
+		}
+		imgElement1.onmouseout = function(){
+			hidenElement1.style.display = 'none';
+			
+		}
+
+		imgElement2.onmouseover = function(){
+			hidenElement2.style.display = 'block';
+			hidenElement2.style.animation = 'example 2s 2';
+		}
+		imgElement2.onmouseout = function(){
+			hidenElement2.style.display = 'none';
+			
+		}
+
+		imgElement3.onmouseover = function(){
+			hidenElement3.style.display = 'block';
+			hidenElement3.style.animation = 'myfirst 2s 2';
+		}
+		imgElement3.onmouseout = function(){
+			hidenElement3.style.display = 'none';
+			
+		}
+</script>	
+</body>
+</html>

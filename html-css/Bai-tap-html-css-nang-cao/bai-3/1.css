@@ -1,0 +1,59 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h3 {
+    margin-top: 26%;
+}
+
+.img {
+	flex-grow: 1;text-align: center;padding: 1%;
+	position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.content-hide{
+	 display: none; 
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	width: 94%;
+	height: 95%;
+	opacity: 0.5;
+	background-color: red;
+	top: 0;
+	/* display: flex; */
+	/* align-items: center; */
+	padding: 0% 0px;
+	transition: 0.5s;
+}
+
+
+@keyframes example {
+  from {width: 50%; opacity: 0;}
+  to {width: 94%%;opacity: 0.7;}
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+@keyframes second{
+        from{ transform: rotate(-90deg);}
+        to{ transform: rotate(0deg);}
+    }
+
+
+

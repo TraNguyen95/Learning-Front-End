@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row3 .wrap .col-md-6 {
+    padding: 0 8%;
+}
+
+.row3 .text-center.bt-read {
+    border-top: 1px solid #00000030;
+    padding: 24px 0;
+}
+
+.row3 .wrap {
+    border: 2px solid #00000040;
+}
+
+.row3 button {background-color: #0c0c0cc7 !important;padding: 4px 10px;border: none;color: #fff;/* margin-top: 10px; *//* margin-bottom: 33px; */border-top-right-radius: 42px 63px;}
+
+.row3 button:hover {
+    background-color: #ce1818ad !important;
+}
+
+.row3 .col-md-3 .row {
+    margin-bottom: 22px;
+    padding: 15px 0;
+}
+
+.row3 .col-md-3 {
+    margin-top: 39px;
+}
+
+h3,h5,h1 {
+    text-transform: uppercase;
+}
+
+.row3 .col-md-3 h5.text-center {
+    border-bottom: 1px solid #00000030;
+    padding-bottom: 22px;
+}
+
+:root {
+  --main-color: #ffeead;
+  --main-background: #ff0000;
+}
+
+img.img-fluid {
+    box-shadow: 0px 0px 3px;
+    margin-bottom: 29px;
+    height: 200px;
+}
+
+.row2 button {
+    background-color: orange !important;
+    padding: 4px 10px;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 33px;
+}
+
+.row2 button:hover {
+    background-color: #000 !important;
+    /* color: #000; */
+}
+
+.row2 h4 {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.row2 h4::before {
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid orange;
+    width: 50px;
+    bottom: -13px;
+    left: 39%;
+}
+
+.row2 p {
+    color: #00000091;
+    font-weight: 500;
+}
+
+.span-icon {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffa500db;
+    /* text-align: center; */
+    margin: 27px auto;
+    border-radius: 50%;
+    position: relative;
+}
+
+.span-icon::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    border: 1px solid #ffa500db;
+    top: 5px;
+    left: 24px;
+}
+
+.span-icon::before {content: "";position: absolute;width: 50px;border: 1px solid #ffa500db;top: 5px;left: -61px;}
+
+.row1 a {
+    color: #fff;
+}
+
+.row1 p {
+    font-size: 14px;
+    color: #ffffff82;
+}
+
+i {
+    font-size: 32px;
+    color: #ffbe00c4;
+    margin-bottom: 19px;
+    margin-top: 14px;
+}
+
+.container {
+    background: #00000024;
+}
+
+.row.row1 {
+    color: #fff;
+    padding: 3%;
+    background: #000000d9;
+}
+
+.row1 h5 {
+    /*color: #ffbe0082;*/
+    color: var(--main-color);
+}
+
+

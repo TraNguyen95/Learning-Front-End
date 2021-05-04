@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+input#browser {
+    width: 60%;
+}
+
+.item35 label, .item35 input {line-height: 22px;}
+
+.item35 input[type="reset"],.item35 input[type="submit"] {
+    margin-top: 2px;
+    /* margin-right: 7px; */
+}
+
+.item35 input[type="submit"] {
+    margin-right: 6px;
+}
+
+.item35 .submit {
+    text-align: left;
+    /* line-height: 25px; */
+}
+
+select#number {
+    float: left;
+    width: 54px;
+}
+
+input[type="submit"] {
+    float: left;
+}
+
+.item23 input[type="submit"] {
+    float: none;
+}
+
+.item27 input[type="submit"] {
+    width: 53px;
+}
+
+input#fname {
+    margin-bottom: 10px;
+}
+
+.flex-item.div1 {
+    text-align: left;
+}
+
+.trongcung {
+    position: relative;
+    height: 100%;
+}
+
+.item-them-4 {
+    grid-column: span 9;
+    padding: 3rem;
+    position: relative;
+}
+
+.item-them-4 p {
+    text-align: center;
+    /* top: 70%; */
+    /* margin-top: 20px; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+body {
+  font-family: sans-serif;
+  /* font-size: 1.3rem; */
+  /* font-weight: 700; */
+  width: 800px;
+  margin: 0 auto;
+}
+
+p{font-size: 15px;color: black;}
+
+.trongcung p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 22px;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
+    text-align: center;
+    /* height: 50px; */
+    line-height: 50px;
+    background: #afaf12;
+    justify-content: center;
+    border: 2px solid;
+}
+
+
+.item-them-1 p:first-child {
+    transform: translateX(-50%) translateY(-50%) rotate( 
+-90deg
+);
+    left: 15%;
+    top: 50%;
+    position: absolute;
+}
+
+.item-them-1 p:last-child {
+    transform: translateX(-50%) translateY(-50%) rotate(
+-90deg
+);
+    left: 56%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+}
+
+.item-them-1 {
+    padding: 3rem;
+    border: 1px solid black;
+    position: relative;
+}
+
+.item-them-2 {
+    /* padding: 1rem; */
+    grid-column: span 3;
+    border: 1px solid black;
+}
+
+.item-them-3 {
+    padding-left: 20px;
+    padding-top: 13px;
+    grid-column: span 4;
+    border: 1px solid black;
+    text-decoration: underline;
+}
+
+.item-them-1 {
+    grid-column: span 2;
+}
+
+.item-them-2 {
+    grid-column: span 3;
+    /* margin-right: 10px; */
+    /* font-style: italic; */
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 4%;
+    font-style: italic;
+}
+
+.item-them-3 {
+    grid-column: span 4;
+}
+
+.item {
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  border: 1px solid black;
+}
+
+.item.item27 {
+    padding-top: 46px;
+}
+
+.item.item30 {
+    border-left: none;
+    border-top: none;
+}
+
+.item.item29 {
+    border-top: none;
+    border-right: none;
+}
+
+.item.item24 {
+    /* border-right: none; */
+    border-bottom: none;
+    grid-column: span 2;
+    padding-top: 40px;
+}
+
+.item.item25 {
+    border-left: none;
+    border-bottom: none;
+}
+
+.item.item22 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: black;
+}
+
+.item34, .item37, .item39 {
+    background: #B0CE94;
+    grid-row: span 3;
+}
+
+.item33,.item36,.item38 {
+    background: #EB3223;
+    grid-row: span 3;
+    span FONT-VARIANT: JIS83;
+}
+
+.item.item35 {
+    grid-column: span 3;
+    grid-row: span 3;
+    color: black;
+}
+
+.item.item32 {
+    grid-column: span 4;
+    grid-row: span 3;
+}
+
+.item.item26 {
+    grid-column: span 3;
+    grid-row: span 2;
+    background: #2C71BA;
+}
+
+.item.item23 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: #2C71BA;
+}
+
+
+
+
+
+.item1 { background-color: #A3C2E2; }
+.item2 { background-color: #ffffff; }
+.item3 { background-color: #A3C2E2; }
+.item4 { background-color: #ffffff; }
+.item5 { background-color: #A3C2E2; }
+.item6 { background-color: #ffffff; }
+.item7 { background-color: #A3C2E2; }
+.item8 { background-color: #ffffff; }
+.item9 { background-color: #A3C2E2; }
+.item.item10 {
+    background: #A0CD63;
+    grid-column: span 2;
+}
+.item.item11 {
+    grid-column: span 3;
+}
+.item.item12 {
+    grid-column: span 4;
+    background: #FFFD54;
+}
+.item13,.item15,.item17,.item19,.item21{
+  background-color: #FAD978;
+}
+
+.wrapper { 
+  display: grid; 
+  grid-template-columns: repeat(9, 1fr);
+
+}
+
+/*.item3 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.item6 {
+    grid-column: 2 / span 2;
+}*/

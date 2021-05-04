@@ -1,0 +1,10 @@
+@font-face {
+	font-family: Helvetica;
+	src: url(font/HelveticaWorld-Regular.ttf);
+}
+.font-1{
+	font-family: Helvetica;
+}
+.font-google{
+	font-family: 'Roboto', sans-serif;
+}

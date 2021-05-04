@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="1.css">
+	<title>Bt grid</title>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+	  <div class="item item1 xanh"></div>
+	  <div class="item item2">2</div>
+	  <div class="item item3 xanh"></div>
+	  <div class="item item4">4</div>
+	  <div class="item item5 xanh"></div>
+	  <div class="item item6">6</div>
+	  <div class="item item7 xanh"></div>
+	  <div class="item item8">8</div>
+	  <div class="item item9 xanh"></div>
+	  <div class="item-them-1"><p>Xin Chào <br> Hoc Viên </p><br><p>Xin Chào Cựu Học Viên</p></div>
+	  <div class="item-them-2"><p>Xin chào ba mẹ học viên</p><br><p>Xin chào chú bác học viên</p></div>
+	  <div class="item-them-3"><p>
+	  		Xin chào anh chị học viên
+		</p>
+		<p>
+		<br>
+			Xin chào cô dì học viên
+		</p></div>
+	  <div class="item item10">10</div>
+	  <div class="item item11">11</div>
+	  <div class="item item12">12</div>
+	  <div class="item item13">13</div>
+	  <div class="item item14">14</div>
+	  <div class="item item15">15</div>
+	  <div class="item item16">16</div>
+	  <div class="item item17">17</div>
+	  <div class="item item18">18</div>
+	  <div class="item item19">19</div>
+	  <div class="item item20">20</div>
+	  <div class="item item21">21</div>
+	  <div class="item-them-4"><p>Chúc Mừng Anh Chị Đã Nhập Học</p></div>
+	  <div class="item item22">
+	  	<div class="flex-item div1">
+	  	<div class="div1-1">
+			  
+
+			  <input type="radio" id="male" name="gender" value="Trai">
+			  <label for="male">Trai</label><br>
+
+			  <input type="radio" id="female" name="gender" value="Gái">
+			  <label for="female">Gái</label><br>
+
+			  <input type="radio" id="other" name="gender" value="Khác">
+			  <label for="other">Khác</label><br>
+
+			  <!-- <input type="radio" id="female" name="gender" value="female">
+			  <input type="radio" id="other" name="gender" value="other">
+			  <label for="other">Khác</label> -->
+			 
+	  	</div>
+	  	<div class="div1-2"></div>
+	  </div>
+	  </div>
+	  <div class="item item23">
+	  	<input list="browsers" name="browser" id="browser">
+	  	<datalist id="browsers">
+		    <option value="Edge">
+		    <option value="Firefox">
+		    <option value="Chrome">
+		    <option value="Opera">
+		    <option value="Safari">
+		</datalist>
+		  <input type="submit" value="Submit">
+</div>
+	  <div class="item item24">
+	  	<input type="text" id="fname" name="fname" value="" ><br>
+	  	<input type="text" id="fname2" name="fname2" value=""><br>
+	  	<input type="submit" value="Click me!">
+	  </div>
+
+	  <!-- <div class="item item25">25</div> -->
+	  <div class="item item26"><textarea rows="9" cols="25">  
+  Hello World!
+</textarea> 
+<input type="submit" value="submit" style="margin-left: 7px;">  
+</div>
+	  <div class="item item27">
+		  <select name="number" id="number">
+		    <option value="1">...</option>
+		    <option value="2">1</option>
+		    <option value="3">2</option>
+		    <option value="4">3</option>
+		  </select>
+		  <br><br>
+		  <input type="submit" value="Submit">
+	  </div>
+	  <div class="item item28">28</div>
+	  <div class="item item29">29</div>
+	  <div class="item item30">30</div>
+	  <div class="item item31">31</div>
+	  <div class="item item32"><div class="trongcung"><p>Thông báo ở đây</p></div></div>
+	  <div class="item item33">33</div>
+	  <div class="item item34">34</div>
+	  <div class="item item35">
+	  	<div class="submit">
+		  <input type="checkbox" id="eng" name="gender" value="English">
+		  <label for="female">English</label><br>
+		  
+		  <input type="checkbox" id="japan" name="gender" value="Japan">
+		  <label for="other">Japan</label>
+		  <br>
+		  <input type="reset" value="Go1">
+		  <input type="reset" value="Go2">
+			  <input type="submit" value="Reset">
+  		</div>
+	  </div>
+	  <!-- <div class="item item36">36</div>
+	  <div class="item item37">37</div>
+	  <div class="item item38">38</div>
+	  <div class="item item39">39</div> -->
+	  
+	</div>
+	<script type="text/javascript">
+		
+//bai 1
+		$('.item35 input[value="Go1"]').click(function(){
+            $.each($(".div1-1 input[type='radio']"), function(){            
+                 //alert($(this).val());
+                  if( $(this).prop( "checked" ) ){
+                 	alert("Bạn chọn giá trị " + $(this).val());
+                 }
+                 
+            });
+        });
+//bai 2 
+		$('.item26 input[type="submit"]').click(function () {
+			var linkImg = $('.item26 textarea').val();
+			$('.item33').html(`<img src = "${linkImg}" width="60" height="60">`) ;
+
+//bai 10
+			var textarea = $('.item26 textarea');
+				if(textarea.val().trim() == "Add textbox"){	
+				var xanh = $('.xanh');
+					if(xanh.html() ==  "") {
+						xanh.html("<input type='text'>");
+					}
+
+					
+				}else if(textarea.val().trim() == "Remove textbox"){
+						var xanh = $('.xanh');
+						xanh.html("");	
+				}	
+		})		
+//bai 3
+		$('.item24 input[type="submit"]').click(function () {
+			var valFname = $('.item24 #fname').val();
+			var valFname2 = $('.item24 #fname2').val();
+			//console.log(valFname);
+			$('.item32 .trongcung p').text(valFname + " " + valFname2);
+
+//bai 8 
+			function isColor(strColor){
+				  var s = new Option().style;
+				  s.color = strColor;
+				  return s.color == strColor;
+				}
+					if(valFname == ""){
+						valFname = 1;
+					}
+					if(valFname2 == ""){
+						valFname2 = 1;
+					}
+					if (isColor(valFname) || isColor(valFname2)){
+					var xanh = $('.xanh');
+					xanh.css("background-color","green");
+				}	
+					
+					
+		})
+
+//bai 4
+		$('.item35 input[value="Go2"]').click(function () {
+			if($('.item35 #eng').prop("checked") && $('.item35 #japan').prop("checked")){
+				$('.item-them-4 p').text($('.item35 #eng').val() + "; " + $('.item35 #japan').val());
+			}
+			else if($('.item35 #eng').prop("checked")){
+				$('.item-them-4 p').text($('.item35 #eng').val());
+			}else if ($('.item35 #japan').prop("checked")){
+				$('.item-them-4 p').text($('.item35 #japan').val());
+			}
+		})
+//bai 5
+
+		$('.item35 input[value="Reset"]').click(function () {
+			$('.item35 #eng').prop("checked", false) && $('.item35 #japan').prop("checked", false);
+		});
+
+// bai 6
+		$('.item27 input[value="Submit"]').click(function () {
+			//console.log(1);
+			if($('.item27 #number').val() == 2){
+				$('.item19').css("background-color" ,"black");
+			}else if($('.item27 #number').val() == 1){
+				$('.item19').css("background-color" ,"#FAD978");
+			}
+		});
+//bai 7
+		$('.item27 #number').change(function() {
+			alert('Bạn đã thay đổi giá trị của combo box');
+		})
+//bai 9 
+
+		function browserName(){
+		   var Browser = navigator.userAgent;
+		   if (Browser.indexOf('MSIE') >= 0){
+		    Browser = 'MSIE';
+		   }
+		   else if (Browser.indexOf('Firefox') >= 0){
+		    Browser = 'Firefox';
+		   }
+		   else if (Browser.indexOf('Chrome') >= 0){
+		    Browser = 'Chrome';
+		   }
+		   else if (Browser.indexOf('Safari') >= 0){
+		    Browser = 'Safari';
+		   }
+		   else if (Browser.indexOf('Opera') >= 0){
+		      Browser = 'Opera';
+		   }
+		   else{
+		    Browser = 'UNKNOWN';
+		   }
+		   return Browser;
+		}
+
+		var checkBrowser = browserName();
+		var browsers = $('#browser'); 
+		var submit_23 = $('.item23 input[type="submit"]');
+		var date = new Date();
+		submit_23.click(function() {
+			if(checkBrowser == browsers.val()){
+				alert(`Đúng trình duyệt [${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}]`)
+			}else{
+				alert(`Không đúng trình duyệt [${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}]`)
+			}
+		});  
+ // bai 10 
+
+
+	</script>
+</body>
+</html>
